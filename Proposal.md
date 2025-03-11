@@ -22,4 +22,22 @@ The experience will likely take the form of (more or less) an application (via p
 
 ---
 
-The target audience
+The target audience are those who do not have a high enough reading level to properly understand the intricacies of the book but still wish to understand the general story and ideas behind it, this is project would appeal to such a group as it is catered directly towards their needs, giving the required information without the level of reading required to understand such a significant classic.
+
+---
+
+## Software and Tools
+
+---
+
+I intend on using python for this project, notably using the tkinter module. I have chosen python due to my large amount of experience with it and its many modules, hence I believe python is suitable for this project, to further support this choice there is reasonable possibility to learn Flask and possibly create a website via the use of Python...
+
+---
+
+## Initial Brainstorming
+
+---
+
+![Cool mindmap](mindmap.png)
+
+As you can see, I looked at what feasible options I had, and made a choice.
