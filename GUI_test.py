@@ -1,7 +1,7 @@
 from tkinter import *
 root = Tk()
 root.title('test')
-root.configure(bg='light grey')
+root.configure(bg='black')
 root.maxsize(1000,1000)
 root.minsize(100,100)
 root.geometry("300x300+120+50")
