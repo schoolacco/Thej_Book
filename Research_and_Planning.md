@@ -33,8 +33,16 @@
 ---
 ---
 
-|UI Name|Plus|Minus|Implication|
+|Software Option|Plus|Minus|Implication|
 |-|-|-|-|
-|||||
-|||||
-|||||
+|Python (Tkinter)|I have a lot of prior experience with tkinter, hence it is easy for me to use, it also has many modules created for it that massively improve it limitations and it conveniently fits in with the purpose with features such as scrollbars and easy ways to position images.|Tkinter still has its limitations, notably it is incredibly limited in terms of accessing html and creating anything even slightly complex with tkinter becomes incredibly convoluted very quickly.|Tkinter is very much a viable option given my prior experience, however there are most certainly better options that would require more knowledge but for a better result.|
+|Python (Flask)|Flask is much more complex than modules such as tkinter giving it much less limitations allowing for more complex things to be made, it can be used to turn it into a proper website rather than just a GUI without all the issues of having to learn an entirely new bit of software.|Flask is extremely complex and I have little to no experience with it and is known to be rather difficult to learn and use, it also requires an understanding of coding in html, javascript and CSS.|Flask is a superior option to most but it would require much more learning to be capable of creating a proper website, however I am confident in my abilities and believe that this may become a viable option with due time.|
+|Adobe XD|Adobe XD is specifically made for UI and UX design and has many quality of life features and is relatively easy to use with a sufficient understanding of its features.|I have almost no experience with Adobe XD hence it would require a great deal of time to properly learn, Adobe XD also is no longer recieving updates hence there is no hope for an improvement of the software. It's also an Adobe product.|Although Adobe XD could potentially be used I'd rather not use it due to my overall lack of knowledge wit it and Adobe.|
+
+---
+---
+
+## Wireframes
+
+---
+---
