@@ -16,8 +16,5 @@ def Name(name):
 @app.route('/html')
 def html():
     return render_template('test.html')
-@app.route('/js')
-def js():
-    return render_template('test.js')
 if __name__ == "__main__":
     app.run(debug= True)
