@@ -1,0 +1,16 @@
+from tkinter import *
+from PIL import Image, ImageTk
+root = Tk()
+root.configure(bg='#300900')
+root.title("Heck*")
+root.maxsize(2000,2000)
+root.minsize(500,500)
+root.geometry("500x500+120+60")
+ico = Image.open('test.jpg')
+photo = ImageTk.PhotoImage(ico)
+root.wm_iconphoto(False, photo)
+Label(text="Welcome to the world of Dante's Inferno" ,bg='#300900', fg='#9a1d00', font=('Terminal', 50)).pack()
+Label(text="\n \n \n \n \n \n \n \n",bg='#300900', fg='#9a1d00').pack()
+Button(text="Join the souls of the damned", bg='#300900', fg='#9a1d00' ,font=('Symbol', 15), command=lambda: root.destroy()).pack()
+Label(text="LEAVE", bg='#300900', fg='#400900', font=('wingdings', 10), padx=1000, pady=2000).pack()
+root.mainloop()
