@@ -89,4 +89,5 @@ Label(canvas, text="Welcome to the world of Dante's Inferno" ,bg='#300900', fg='
 Label(canvas, text="\n \n \n \n \n \n \n \n",bg='#300900', fg='#9a1d00').pack()
 Button(canvas, text="Join the souls of the damned", bg='#300900', fg='#9a1d00' ,font=('Symbol', 15), command=lambda: main(root)).pack()
 Label(canvas, text="LEAVE", bg='#300900', fg='#400900', font=('wingdings', 10)).pack()
-root.mainloop()
+if __name__ == "__main__":
+  root.mainloop()
