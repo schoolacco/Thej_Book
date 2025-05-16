@@ -1,16 +1,32 @@
-import customtkinter
-
-customtkinter.set_appearance_mode("System")  # Modes: system (default), light, dark
-customtkinter.set_default_color_theme("blue")  # Themes: blue (default), dark-blue, green
-
-app = customtkinter.CTk()  # create CTk window like you do with the Tk window
-app.geometry("400x240")
-
-def button_function():
-    print("button pressed")
-
-# Use CTkButton instead of tkinter Button
-button = customtkinter.CTkButton(master=app, text="CTkButton", command=button_function)
-button.place(relx=0.5, rely=0.5, anchor=customtkinter.CENTER)
-
-app.mainloop()
+#Import the required library
+from tkinter import *
+#Create an instance of tkinter frame or window
+win = Tk()
+#Define the geometry
+win.geometry("750x400")
+#Create a Frame
+frame= Frame(win)
+def close():
+   win.destroy()
+#Create a Label widget in the frame
+text= Label(frame, text= "Register", font= ('Helvetica bold', 14))
+text.pack(pady=20)
+#ADDING A SCROLLBAR
+myscrollbar=Scrollbar(frame,orient="vertical")
+myscrollbar.pack(side="right",fill="y")
+#Add Entry Widgets
+Label(frame, text= "Username").pack()
+username= Entry(frame, width= 20)
+username.pack()
+Label(frame, text= "password").pack()
+password= Entry(frame, show="*", width= 15)
+password.pack()
+Label(frame, text= "Email Id").pack()
+email= Entry(frame, width= 15)
+email.pack()
+#Create widget in the frame
+button= Button(frame, text= "Close",font= ('Helvetica bold',14),
+command= close)
+button.pack(pady=20)
+frame.pack()
+win.mainloop()
