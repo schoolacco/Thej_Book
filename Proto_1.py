@@ -26,7 +26,7 @@ def Questionaire(root):
   b4 = Button(subroot, text="Answer 4", command=lambda: insert("Incorrect", subroot, List))
   b4.place(relx=0.15, rely=0)
   List = [b1,b2,b3,b4]
-def main(root, image1, image2, text1, text2):
+def main(root, images, texts, command):
     root.destroy()
     root = Tk()
     root.state('zoomed')
@@ -58,18 +58,13 @@ def main(root, image1, image2, text1, text2):
     # Content starts here
     Label(content, text="Just remember... you did this to yourself", 
           bg='#300900', fg='#9a1d00', font=('Public Sans', 20)).pack(pady=10)
-
+    for i in range(len(images)):
     # Load images
-    image = Image.open(image1)
-    image = image.resize((image.width // 2, image.height // 2))
-    img_tk = ImageTk.PhotoImage(image)
-    image = Image.open(image2)
-    image = image.resize((image.width // 2, image.height // 2))
-    img_tk_2 = ImageTk.PhotoImage(image)
-    Button(content, image=img_tk, padx=1, pady=1, command=lambda: Questionaire(root)).pack(pady=10)
-    Message(content, bg='#300900', fg='#9a1d00', width=800, text=text1).pack(pady=10)
-    Button(content, image=img_tk_2, padx=1, pady=1, command=lambda: Questionaire(root)).pack(pady=10)
-    Message(content, bg='#300900', fg='#9a1d00', width=800, text=text2).pack(pady=10)
+      image = Image.open(images[i-1])
+      image = image.resize((image.width // 2, image.height // 2))
+      img_tk = ImageTk.PhotoImage(image)
+      Button(content, image=img_tk, padx=1, pady=1, command=lambda: Questionaire(root)).pack(pady=10)
+      Message(content, bg='#300900', fg='#9a1d00', width=800, text=texts[i-1]).pack(pady=10)
     root.mainloop()
 
 root = Tk()
@@ -86,7 +81,7 @@ canvas = Canvas(root, bg="#300900", width=500, height=500, bd=0, cursor="circle"
 canvas.pack(fill=BOTH, expand=True)
 Label(canvas, text="Welcome to the world of Dante's Inferno" ,bg='#300900', fg='#9a1d00', font=('Terminal', 50)).pack()
 Label(canvas, text="\n \n \n \n \n \n \n \n",bg='#300900', fg='#9a1d00').pack()
-Button(canvas, text="Join the souls of the damned", bg='#300900', fg='#9a1d00' ,font=('Symbol', 15), command=lambda: main(root, "placeholder.png", "placeholder.png", "lorem ipsum", "lorem ipsum")).pack()
+Button(canvas, text="Join the souls of the damned", bg='#300900', fg='#9a1d00' ,font=('Symbol', 15), command=lambda: main(root, ["placeholder.png", "placeholder.png"], ["lorem ipsum", "lorem ipsum"], command=None)).pack()
 Label(canvas, text="LEAVE", bg='#300900', fg='#400900', font=('wingdings', 10)).pack()
 if __name__ == "__main__":
   root.mainloop()
